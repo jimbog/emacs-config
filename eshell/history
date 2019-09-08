@@ -1,0 +1,128 @@
+aws cloudformation create-stack --stack-name apigateway --template-body file://template.json --capabilities CAPABILITY_IAM --parameters ParameterKey=S3Bucket,ParameterValue=swagger-lmdlm-example --profile student
+aws cloudformation describes-stacks --stack-name apigateway --query Stacks[0].Outputs
+aws cloudformation describe-stacks --stack-name apigateway --query Stacks[0].Outputs
+aws cloudformation describe-stacks --stack-name apigateway --query Stacks[0].Outputs --profile student
+code code code 
+aws apigateway import-rest-api --fail-on-warnings --body file://swagger.json
+aws apigateway import-rest-api --fail-on-warnings --body file://swagger.json --profile student
+aws apigateway import-rest-api --fail-on-warnings --body file://swagger.json --profile student
+aws cloudformation update-stack --stack-name apigateway --template-body file://template.json --capabilities CAPABILITY_IAM --parameters ParameterKey=S3Bucket,UsePreviousValue=true ParameterKey=S3Key,UsePreviousValue=true ParameterKey=ApiId,ParameterValue=wzrftwhdf9 --profile studentcode 
+aws cloudformation update-stack --stack-name apigateway --template-body file://template.json --capabilities CAPABILITY_IAM --parameters ParameterKey=S3Bucket,UsePreviousValue=true ParameterKey=S3Key,UsePreviousValue=true ParameterKey=ApiId,ParameterValue=wzrftwhdf9 --profile student
+aws apigateway create-deployment --rest-api-id wzrftwhdf9 --stage-name v1
+aws apigateway create-deployment --rest-api-id wzrftwhdf9 --stage-name v1 --profile student
+export ApiGatewayEndpoint="$ApiId.execute-api.us-east-1.amazonaws.com/v1"
+export ApiIdId=wzrftwhdf9
+export ApiGatewayEndpoint="$ApiId.execute-api.us-east-1.amazonaws.com/v1"
+curl -vvv -X POST -d '{"email": "your@mail.com", "phone": "0123456789"}' -H "Content-Type: application/json" https://$ApiGatewayEndpoint/user
+echo $ApiId
+export ApiId=wzrftwhdf9
+echo $ApiId
+curl -vvv -X POST -d '{"email": "your@mail.com", "phone": "0123456789"}' -H "Content-Type: application/json" https://$ApiGatewayEndpoint/user
+export ApiGatewayEndpoint="$ApiId.execute-api.us-east-1.amazonaws.com/v1"
+echo $ApiGatewayEndpoint
+curl -vvv -X POST -d '{"email": "your@mail.com", "phone": "0123456789"}' -H "Content-Type: application/json" https://$ApiGatewayEndpoint/user
+curl  -X POST -d '{"email": "your@mail.com", "phone": "0123456789"}' -H "Content-Type: application/json" https://$ApiGatewayEndpoint/user
+curl  -X POST -d '{"email": "your@mail.com", "phone": "0123456789"}' -H "Content-Type: application/json" https://$ApiGatewayEndpoint/user
+curl -v -X POST -d '{"email": "your@mail.com", "phone": "0123456789"}' -H "Content-Type: application/json" https://$ApiGatewayEndpoint/user
+curl -vvv -X GET https://$ApiGatewayEndpoint/user
+cd ..
+ls
+tree apigateway/
+ls api-gateway/
+code api-gateway/
+rm api-gateway/
+rmdir api-gateway/
+ls
+cd serverless/
+ls
+cd sso/
+ls
+code .
+cd ..
+ls 
+code  sam-test-basic-project/
+cd sso/
+sam local invoke RetrieveAllOrgs --event event.json
+sam local invoke RetrieveAllOrgs --event event.json
+sam local invoke RetrieveAllOrgs --event event.json
+sam local start-api
+sam local start-api
+sam build
+sam local start-api
+sam build
+sam local start-api
+sam local start-api
+sam build
+sam local start-api
+sam build
+sam local start-api
+sam build
+sam build
+sam build
+ls
+cp -r retrieve-all-orgs/ retrieve-all-users
+cp -r retrieve-all-orgs/ create-user
+cp -r retrieve-all-orgs/ create-user
+cp -r retrieve-all-orgs/ create-user
+rm -rf create-user/
+cp -r retrieve-all-orgs/ create-user
+sam build
+sam local start-api
+sam build
+sam local start-api
+sam build
+sam local start-api
+sam build
+sam local start-api
+sam build
+sam local start-api
+rm -rf .aws-sam/
+sam build
+sam local start-api
+rm -rf .aws-sam/
+sam build && sam local start-api
+rm -rf .aws-sam/ && sam build && sam local start-api
+rm -rf .aws-sam/ && sam build && sam local start-api
+curl -d {"name": "jim"} http://127.0.0.1:3000/user
+curl -d {"name": "jim"} http://127.0.0.1:3000/user
+curl -d {"name": "jim"} http://127.0.0.1:3000/user
+curl -vvv -d {"name": "jim"} http://127.0.0.1:3000/user
+curl -vvv -d {"name": "jim"} http://127.0.0.1:3000/user
+cp -r create-user/ retrieve-user
+cd /ssh:jim@192.168.0.136
+cd /jim@192.168.0.136
+cd jim@192.168.0.136
+cd /ssh:jim@192.168.0.136:~
+cd /ssh:jim@192.168.0.136:~
+cd /ssh:jim@192.168.0.136:~
+cd
+cd work/sso/
+git pull
+code .
+cd ..
+ls
+cd learning
+cd serverless
+ls
+ cd aws-learning/
+cd serverless
+ls
+sam init --runtime nodejs 
+ls
+cd sam-app/
+ls
+cd .. 
+mv sam-app/ sam-full
+cd sam-full/
+mv hello-world/ app
+code .
+PS1= $
+$PS1= $
+eshell-prompt-function (lambda () "$ ")
+setq eshell-prompt-function (lambda () "$ ")
+(setq eshell-prompt-function (lambda () "$ "))
+ls
+ls
+./deploy.sh
+chmod u+x deploy.sh
+sd
